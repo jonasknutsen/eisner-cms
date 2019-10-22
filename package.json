@@ -1,0 +1,40 @@
+{
+  "name": "eisner-cms",
+  "version": "0.0.1",
+  "description": "CMS based on Next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "nect build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonasknutsen/eisner-cms.git"
+  },
+  "author": "Jonas Knutsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonasknutsen/eisner-cms/issues"
+  },
+  "homepage": "https://github.com/jonasknutsen/eisner-cms#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.6",
+    "next": "^9.1.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
