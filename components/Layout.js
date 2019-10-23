@@ -60,6 +60,10 @@ const Layout = props => (
         letter-spacing: .1rem;
         margin-top: 0;
       }
+      .form-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
   `}</style>
   </div>
 )
