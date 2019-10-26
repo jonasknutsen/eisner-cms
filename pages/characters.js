@@ -9,7 +9,7 @@ class Characters extends React.Component {
         <form>
           <TextField name='name' label='Name' />
           <TextField name='description' label='Description' />
-          <input type='text' name='heroImage' />
+          <TextField name='heroImage' label='Hero image' />
           <button>Add character</button>
         </form>
       </div>

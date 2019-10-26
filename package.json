@@ -4,8 +4,8 @@
   "description": "CMS based on Next.js",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
-    "build": "nect build",
+    "dev": "node server.js",
+    "build": "next build",
     "start": "NODE_ENV=production node server.js"
   },
   "repository": {
@@ -19,9 +19,12 @@
   },
   "homepage": "https://github.com/jonasknutsen/eisner-cms#readme",
   "dependencies": {
+    "axios": "^0.19.0",
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
     "express": "^4.17.1",
+    "isomorphic-unfetch": "^3.0.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.6",
     "next": "^9.1.1",

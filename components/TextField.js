@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const TextField = ({ name, label }) => (
+const TextField = ({ name, label, ...rest }) => (
   <div className='text-field'>
     <label>
       {label}
-      <input type='text' name={name} />
+      <input type='text' name={name} {...rest} />
     </label>
     <style jsx>{`
       .text-field {
