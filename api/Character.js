@@ -1,7 +1,7 @@
 // Characters
 const mongoose = require('mongoose')
 const config = require('../config/config')
-mongoose.connect(config.database, { useNewUrlParser: true })
+mongoose.connect(config.database, { useUnifiedTopology: true, useNewUrlParser: true })
 
 var Character = require('../models/Character')
 

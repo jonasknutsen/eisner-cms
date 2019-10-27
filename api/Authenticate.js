@@ -2,7 +2,7 @@ const config = require('../config/config')
 var jwt = require('jsonwebtoken')
 var bcrypt = require('bcrypt')
 var mongoose = require('mongoose')
-mongoose.connect(config.database, { useNewUrlParser: true })
+mongoose.connect(config.database, { useUnifiedTopology: true, useNewUrlParser: true })
 
 var User = require('../models/user')
 
