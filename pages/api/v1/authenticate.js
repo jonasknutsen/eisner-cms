@@ -1,10 +1,10 @@
-const config = require('../config/config')
+const config = require('../../../config/config')
 var jwt = require('jsonwebtoken')
 var bcrypt = require('bcrypt')
 var mongoose = require('mongoose')
 mongoose.connect(config.database, { useUnifiedTopology: true, useNewUrlParser: true })
 
-var User = require('../models/user')
+var User = require('../../../models/user')
 
 exports.authenticate = function (req, res) {
   User.findOne({ email: req.body.email }, function (err, user) {
